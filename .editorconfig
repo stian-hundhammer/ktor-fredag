@@ -1,0 +1,24 @@
+# http://editorconfig.org
+
+root=true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+# Kotlin styleguide allows this, as does the default IntelliJ IDEA style.
+disabled_rules=no-wildcard-imports
+
+[*.{java,kt,kts}]
+indent_size=4
+
+[*.{kt,kts}]
+# default IntelliJ IDEA style, same as alphabetical, but with "java", "javax", "kotlin" and alias imports in the end of the imports list
+ij_kotlin_imports_layout=*,java.**,javax.**,kotlin.**,^
+
+[*.md]
+# Markdown uses double trailing whitespaces as special chars to force newlines
+trim_trailing_whitespace=false
