@@ -12,4 +12,4 @@ java.sourceCompatibility = JavaVersion.VERSION_17
 group = "no.knowledge.fredag"
 
 // versions
-val ktorVersion: String by project
+val ktor_version: String by project
