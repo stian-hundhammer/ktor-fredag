@@ -1,3 +1,3 @@
 # ktor-fredag
 
-Just my own system for my own web site. 
+Just my own system for my own website. 
