@@ -8,16 +8,12 @@ import io.ktor.server.routing.*
 
 fun main() {
     println("hello!")
-    embeddedServer(Netty, port = 8080, host = "localhost") {
-        configureRouting()
-        println("configure now, baby!")
-    }.start(wait = true)
-}
 
-fun Application.configureRouting() {
-    routing {
-        get("/") {
-            call.respondText("hello, bastard!")
+    embeddedServer(Netty, port = 8080) {
+        routing {
+            get("/") {
+                call.respondText("hello, bastard!")
+            }
         }
-    }
+    }.start(wait = true)
 }
